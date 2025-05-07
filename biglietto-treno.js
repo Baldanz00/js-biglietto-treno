@@ -1,7 +1,7 @@
-// Chiedi all'utente il numero di chilometri
+// Chiedo all'utente il numero di chilometri
 let km = parseFloat(prompt("Quanti chilometri vuoi percorrere?"));
 
-// Chiedi l'età del passeggero
+// Chiedo l'età del passeggero
 let eta = parseInt(prompt("Quanti anni ha il passeggero?"));
 
 // Prezzo base al km
@@ -14,14 +14,16 @@ let prezzoBase = km * prezzoKm;
 let sconto = 0;
 
 if (eta < 18) {
-sconto = 0.20; // 20% di sconto
+sconto = 0.20;   // 20% di sconto se <18
 } else if (eta > 65) {
-sconto = 0.40; // 40% di sconto
+sconto = 0.40; // 40% di sconto se over 65
 }
+
+//Calcolo del prezzo finale 
 
 let prezzoFinale = prezzoBase * (1 - sconto);
 
-// Formatta il prezzo finale con massimo due decimali
+// Trasformo il prezzo finale con massimo due decimali
 prezzoFinale = prezzoFinale.toFixed(2);
 
 // Mostra il prezzo finale
