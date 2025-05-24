@@ -57,7 +57,7 @@
       // Genera numero biglietto casuale
       const numeroBiglietto = Math.floor(Math.random() * 900000) + 100000;
 
-      // Mostra la card con i dati
+      // Mostra la card con i dati - preso da documentazione mdn
       document.getElementById('cardKm').textContent = km;
       document.getElementById('cardEta').textContent = eta;
       document.getElementById('cardPrezzo').textContent = prezzoFinale;
